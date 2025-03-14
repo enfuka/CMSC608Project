@@ -1,7 +1,7 @@
 import { Navbar, Link, Text, Button, Dropdown } from "@nextui-org/react";
 import { icons } from "../images/Icons.js";
 import { useState, useEffect } from "react";
-import { useLocation, useNavigate, Link as RouterLink } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import CapAirLogo from "../images/capAirLogo.js";
 import { useIsAuthenticated, useSignOut } from "react-auth-kit";
 import PersonIcon from "@mui/icons-material/Person";

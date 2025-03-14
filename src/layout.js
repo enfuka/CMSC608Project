@@ -6,7 +6,7 @@ import {
   createTheme as nextCreateTheme,
   NextUIProvider,
 } from "@nextui-org/react";
-import { Outlet, useNavigate, useLocation } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import SearchContext from "./contexts/searchContext";
 import { Toaster } from "react-hot-toast";

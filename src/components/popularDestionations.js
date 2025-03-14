@@ -1,5 +1,4 @@
 import Grid from "@mui/material/Grid";
-import * as React from "react";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
@@ -12,7 +11,7 @@ import vegaspic from "../images/Vegas.png";
 import houstonpic from "../images/houston2pic.png";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import dayjs from "dayjs";
 
 const PopularDestinations = () => {

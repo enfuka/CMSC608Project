@@ -10,8 +10,8 @@ import { createTheme } from "@mui/material/styles";
 import firstcity from "../images/firstcity.jpg";
 import secondcity from "../images/city2.jpg";
 import { useNavigate } from "react-router-dom";
-import image3 from '../images/city3.jpg'
-import city4 from '../images/city4.jpg'
+import image3 from "../images/city3.jpg";
+import city4 from "../images/city4.jpg";
 
 const slideStyle = {
   objectFit: "cover",
@@ -768,7 +768,6 @@ const Slides = () => {
             </Box>
           </Box>
         </div>
-        
       </Carousel>
     </div>
   );

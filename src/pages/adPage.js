@@ -1,6 +1,5 @@
-import TripLookupForm from "../components/tripLookupForm";
 import VideoBackground from "../components/videoBackground";
-import { Paper, Box, Typography, Grow, Backdrop } from "@mui/material";
+import { Box, Typography, Grow, Backdrop } from "@mui/material";
 import { useEffect, useState } from "react";
 import { checkImagesLoaded } from "../utilities/checkImagesLoaded";
 import Spinner from "../images/spinner";

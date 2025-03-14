@@ -9,7 +9,6 @@ import Card from "@mui/material/Card";
 import { useLocation, useNavigate } from "react-router-dom";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
-import { Couple } from "../images/couple";
 
 export default function Footer() {
   let location = useLocation();

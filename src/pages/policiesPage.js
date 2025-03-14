@@ -1,5 +1,4 @@
 import Grid from "@mui/material/Grid";
-import * as React from "react";
 import Card from "@mui/material/Card";
 import Typography from "@mui/material/Typography";
 import { Box, Container, Backdrop, Grow } from "@mui/material";
@@ -14,14 +13,10 @@ import amenities from "../images/amenities.jpg";
 import medical from "../images/medical.jpg";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { useEffect, Suspense, useState, useReducer } from "react";
-import blurpets from "../images/blurpets.png";
-import blurbaggage from "../images/blurbaggage.png";
-import blurchanging from "../images/blurchange.png";
+import { useEffect, useState } from "react";
 import Spinner from "../images/spinner";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
-import Button from "@mui/material/Button";
 import { checkImagesLoaded } from "../utilities/checkImagesLoaded";
 
 const PolicyCard = (props) => {

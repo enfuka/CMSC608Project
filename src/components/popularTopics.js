@@ -1,5 +1,4 @@
 import Grid from "@mui/material/Grid";
-import * as React from "react";
 import Card from "@mui/material/Card";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";

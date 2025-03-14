@@ -15,9 +15,6 @@ import {
   Alert,
 } from "@mui/material";
 import { Container, Button, Backdrop } from "@mui/material";
-import AccordionSummary from "@mui/material/AccordionSummary";
-import AccordionDetails from "@mui/material/AccordionDetails";
-import dayjs from "dayjs";
 import { useNavigate, useParams } from "react-router-dom";
 import Spinner from "../images/spinner";
 import TableSkeleton from "../components/tableSkeleton";
@@ -52,7 +49,7 @@ export default function MyTripPage(props) {
       lastName: URLparams.lastName,
     };
     let domain = process.env.REACT_APP_DOMAIN;
-    
+
     let url = `${process.env.REACT_APP_PROTOCOL}://${domain}/airport`;
     await fetch(url)
       .then((response) => response.json())

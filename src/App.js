@@ -1,7 +1,7 @@
 import "./styles/index.css";
 import { useState, useEffect } from "react";
 import TabPane from "./components/tabPane";
-import { Box, Backdrop, Collapse, Grow } from "@mui/material";
+import { Box, Backdrop, Grow } from "@mui/material";
 import Slides from "./components/slides";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";

@@ -14,8 +14,7 @@ import {
   ListItemText,
 } from "@mui/material";
 import { Container, Backdrop } from "@mui/material";
-import dayjs from "dayjs";
-import { useNavigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import Spinner from "../images/spinner";
 import TableSkeleton from "../components/tableSkeleton";
 import MyTripTable from "../components/myTripTable";
@@ -47,7 +46,7 @@ export default function CheckInPage(props) {
       lastName: URLparams.lastName,
     };
     let domain = process.env.REACT_APP_DOMAIN;
-    
+
     let url = `${process.env.REACT_APP_PROTOCOL}://${domain}/airport`;
     await fetch(url)
       .then((response) => response.json())
@@ -106,7 +105,7 @@ export default function CheckInPage(props) {
 
   const handleCheckIn = async (ticketIds) => {
     let domain = process.env.REACT_APP_DOMAIN;
-    
+
     let url = `${process.env.REACT_APP_PROTOCOL}://${domain}/ticket/check-in`;
     await fetch(url, {
       method: "PUT",

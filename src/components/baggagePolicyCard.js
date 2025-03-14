@@ -7,7 +7,6 @@ import {
   Stack,
 } from "@mui/material";
 import LuggageIcon from "@mui/icons-material/Luggage";
-import SectionDetails from "./sectionDetails";
 import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
 import RestaurantIcon from "@mui/icons-material/Restaurant";
 import ConfirmationNumberIcon from "@mui/icons-material/ConfirmationNumber";

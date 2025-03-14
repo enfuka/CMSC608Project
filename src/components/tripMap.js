@@ -7,7 +7,6 @@ import {
   useTheme,
   useMediaQuery,
   Chip,
-  Box,
   Paper,
 } from "@mui/material";
 import Slider, { SliderThumb, SliderMark } from "@mui/material/Slider";
@@ -16,7 +15,6 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import dayjs from "dayjs";
 import TripDetailsTable from "./tripDetailsTable";
 import PropTypes from "prop-types";
-import { icons } from "../images/Icons.js";
 import { useContext } from "react";
 import SearchContext from "../contexts/searchContext";
 import FlightIcon from "@mui/icons-material/Flight";

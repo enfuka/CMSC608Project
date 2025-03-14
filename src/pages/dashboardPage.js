@@ -1,48 +1,16 @@
 import Trip from "../components/trip";
-import { useState, useEffect, useContext, useRef } from "react";
+import { useState, useEffect } from "react";
 import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
-import { styled } from "@mui/material/styles";
 import CardHeader from "@mui/material/CardHeader";
-import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
-import CardActions from "@mui/material/CardActions";
-import Collapse from "@mui/material/Collapse";
-import Avatar from "@mui/material/Avatar";
 import IconButton from "@mui/material/IconButton";
 import EditIcon from "@mui/icons-material/Edit";
 import Typography from "@mui/material/Typography";
-import TableHead from "@mui/material/TableHead";
-import TableRow from "@mui/material/TableRow";
-import Table from "@mui/material/Table";
-import TableCell, { tableCellClasses } from "@mui/material/TableCell";
-import {
-  Box,
-  Button,
-  ButtonGroup,
-  CardActionArea,
-  Chip,
-  Grow,
-  Paper,
-  Slider,
-  Stack,
-  TableBody,
-  useMediaQuery,
-  useTheme,
-  Divider,
-  List,
-  ListItem,
-  ListItemText,
-  Tooltip,
-} from "@mui/material";
-import { Container, Accordion, Backdrop } from "@mui/material";
-import AccordionSummary from "@mui/material/AccordionSummary";
-import AccordionDetails from "@mui/material/AccordionDetails";
+import { Box, Stack, Divider, Tooltip } from "@mui/material";
+import { Container, Backdrop } from "@mui/material";
 import dayjs from "dayjs";
-import { useNavigate } from "react-router-dom";
 import Spinner from "../images/spinner";
-import TableSkeleton from "../components/tableSkeleton";
-import MyTripTable from "../components/myTripTable";
 import PersonIcon from "@mui/icons-material/Person";
 import CapAirIcon from "../images/capAirIcon";
 import { toast } from "react-hot-toast";
@@ -53,7 +21,6 @@ import {
   getFlightDuration,
   getLayoverDuration,
 } from "../utilities/getDuration";
-import BoardingPass from "../components/boardingPass";
 import PeopleIcon from "@mui/icons-material/People";
 import AddIcon from "@mui/icons-material/Add";
 import SavedPassengers from "../components/savedPassengers";
@@ -79,7 +46,7 @@ export default function DashboardPage(props) {
 
   const getTripData = async () => {
     let domain = process.env.REACT_APP_DOMAIN;
-    
+
     let url = `${process.env.REACT_APP_PROTOCOL}://${domain}/airport`;
     await fetch(url)
       .then((response) => response.json())
@@ -167,7 +134,7 @@ export default function DashboardPage(props) {
 
   const handleCheckIn = async (ticketIds) => {
     let domain = process.env.REACT_APP_DOMAIN;
-    
+
     let url = `${process.env.REACT_APP_PROTOCOL}://${domain}/ticket/check-in`;
     await fetch(url, {
       method: "PUT",

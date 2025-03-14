@@ -8,13 +8,10 @@ import DialogActions from "@mui/material/DialogActions";
 import DialogContentText from "@mui/material/DialogContentText";
 import IconButton from "@mui/material/IconButton";
 import CloseIcon from "@mui/icons-material/Close";
-import { useState, useEffect, useContext, useReducer, useRef } from "react";
-import Grid from "@mui/material/Grid";
-import Container from "@mui/material/Container";
+import { useState } from "react";
 import {
   Stack,
   TextField,
-  Paper,
   Typography,
   Box,
   Select,
@@ -24,16 +21,9 @@ import {
 } from "@mui/material";
 import PrintIcon from "@mui/icons-material/Print";
 import ShareIcon from "@mui/icons-material/Share";
-import dayjs from "dayjs";
-import PersonIcon from "@mui/icons-material/Person";
-import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 import { toast } from "react-hot-toast";
 import { useIsAuthenticated } from "react-auth-kit";
 import { getCookie } from "../utilities/getCookie";
-import LoadingDots from "./loadingDots";
-import { useLocation, useNavigate } from "react-router-dom";
-import SaveIcon from "@mui/icons-material/Save";
-import LoadingButton from "@mui/lab/LoadingButton";
 import Backdrop from "@mui/material/Backdrop";
 import Spinner from "../images/spinner";
 import BoardingPass from "./boardingPass";
@@ -110,7 +100,7 @@ export default function BoardingPassModal(props) {
   const getBoardingPasses = async () => {
     let request = props.itineraryId;
     let domain = process.env.REACT_APP_DOMAIN;
-    
+
     let url = `${process.env.REACT_APP_PROTOCOL}://${domain}/itinerary/board`;
     await fetch(url, {
       method: "POST",

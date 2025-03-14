@@ -1,5 +1,4 @@
 import Grid from "@mui/material/Grid";
-import * as React from "react";
 import Card from "@mui/material/Card";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
@@ -549,7 +548,6 @@ export default function CapRewardsPage() {
                   boxShadow: "none",
                   mt: "10px",
                   mb: "-10px",
-                  
                 }}
                 data-aos="fade-up"
               >
@@ -557,7 +555,6 @@ export default function CapRewardsPage() {
                   variant="text.primary"
                   fontSize={isAboveSM ? "16px" : "16px"}
                   sx={{ width: "400", height: "90px", lineHeight: 1 }}
-           
                   color="grey"
                 >
                   Elevate from Bronze to Gold tier by earning CapRewards points.
@@ -850,7 +847,14 @@ export default function CapRewardsPage() {
               </Grid>
 
               {/* End How To Spend */}
-              <Card sx={{width: "100%", height: isAboveSM ? "30px" : "0px", border: "none", boxShadow: "none",}}></Card>
+              <Card
+                sx={{
+                  width: "100%",
+                  height: isAboveSM ? "30px" : "0px",
+                  border: "none",
+                  boxShadow: "none",
+                }}
+              ></Card>
             </Grid>
           </Box>
         </Container>

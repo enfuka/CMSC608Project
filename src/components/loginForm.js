@@ -40,7 +40,7 @@ const SignUpForm = (props) => {
 
   const registerUser = async () => {
     let domain = process.env.REACT_APP_DOMAIN;
-    
+
     let url = `${process.env.REACT_APP_PROTOCOL}://${domain}/user/register`;
     await fetch(url, {
       method: "POST",
@@ -249,7 +249,7 @@ const SignInForm = (props) => {
 
   const loginUser = async () => {
     let domain = process.env.REACT_APP_DOMAIN;
-    
+
     let url = `${process.env.REACT_APP_PROTOCOL}://${domain}/user/login`;
     await fetch(url, {
       method: "POST",

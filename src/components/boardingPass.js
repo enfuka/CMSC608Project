@@ -1,13 +1,5 @@
-import {
-  Paper,
-  Box,
-  Grid,
-  Typography,
-  Divider,
-  Stack,
-  SvgIcon,
-} from "@mui/material";
-import { useEffect, useState } from "react";
+import { Paper, Box, Grid, Typography, Divider, Stack } from "@mui/material";
+import { useEffect } from "react";
 import CapAirLogo from "../images/capAirLogo";
 import dayjs from "dayjs";
 import FlightIcon from "@mui/icons-material/Flight";

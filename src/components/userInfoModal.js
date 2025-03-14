@@ -5,13 +5,11 @@ import Dialog from "@mui/material/Dialog";
 import DialogTitle from "@mui/material/DialogTitle";
 import DialogContent from "@mui/material/DialogContent";
 import DialogActions from "@mui/material/DialogActions";
-import DialogContentText from "@mui/material/DialogContentText";
 import IconButton from "@mui/material/IconButton";
 import CloseIcon from "@mui/icons-material/Close";
-import { useState, useEffect, useContext, useReducer, useRef } from "react";
+import { useState, useEffect, useReducer } from "react";
 import Grid from "@mui/material/Grid";
-import Container from "@mui/material/Container";
-import { Stack, TextField, Paper, Typography, Alert } from "@mui/material";
+import { Stack, TextField, Typography, Alert } from "@mui/material";
 import dayjs from "dayjs";
 import PersonIcon from "@mui/icons-material/Person";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
@@ -218,7 +216,7 @@ export default function UserInfoModal(props) {
 
   const getUserDetails = async () => {
     let domain = process.env.REACT_APP_DOMAIN;
-    
+
     let url = `${process.env.REACT_APP_PROTOCOL}://${domain}/user/details`;
     await fetch(url, {
       headers: {
@@ -265,7 +263,7 @@ export default function UserInfoModal(props) {
       phoneNumber: formInput.phone,
     };
     let domain = process.env.REACT_APP_DOMAIN;
-    
+
     let url = `${process.env.REACT_APP_PROTOCOL}://${domain}/user/update`;
     await fetch(url, {
       method: "PUT",

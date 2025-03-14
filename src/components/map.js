@@ -1,6 +1,5 @@
-import React from "react";
 import GoogleMapReact from "google-map-react";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Marker from "./marker";
 
 export default function SimpleMap({ marks }) {

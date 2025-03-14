@@ -1,25 +1,20 @@
 import PropTypes from "prop-types";
-import Button from "@mui/material/Button";
 import { styled } from "@mui/material/styles";
 import Dialog from "@mui/material/Dialog";
 import DialogTitle from "@mui/material/DialogTitle";
 import DialogContent from "@mui/material/DialogContent";
 import DialogActions from "@mui/material/DialogActions";
-import DialogContentText from "@mui/material/DialogContentText";
 import IconButton from "@mui/material/IconButton";
 import CloseIcon from "@mui/icons-material/Close";
-import { useState, useEffect, useContext, useReducer, useRef } from "react";
+import { useState, useEffect, useReducer } from "react";
 import Grid from "@mui/material/Grid";
-import Container from "@mui/material/Container";
-import { Stack, TextField, Paper, Typography, Alert } from "@mui/material";
+import { Stack, TextField, Typography } from "@mui/material";
 import dayjs from "dayjs";
 import PersonIcon from "@mui/icons-material/Person";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 import { toast } from "react-hot-toast";
 import { useIsAuthenticated } from "react-auth-kit";
 import { getCookie } from "../utilities/getCookie";
-import LoadingDots from "./loadingDots";
-import { useLocation, useNavigate } from "react-router-dom";
 import SaveIcon from "@mui/icons-material/Save";
 import LoadingButton from "@mui/lab/LoadingButton";
 
@@ -196,7 +191,7 @@ export default function SavedPassengerModal(props) {
       addCustomer: true,
     };
     let domain = process.env.REACT_APP_DOMAIN;
-    
+
     let url = `${process.env.REACT_APP_PROTOCOL}://${domain}/user/passenger`;
     await fetch(url, {
       method: "POST",
@@ -242,7 +237,7 @@ export default function SavedPassengerModal(props) {
       phoneNumber: formInput.phone,
     };
     let domain = process.env.REACT_APP_DOMAIN;
-    
+
     let url = `${process.env.REACT_APP_PROTOCOL}://${domain}/user/update`;
     await fetch(url, {
       method: "PUT",

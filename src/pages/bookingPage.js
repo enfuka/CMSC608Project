@@ -1,4 +1,3 @@
-import * as React from "react";
 import { useState, useEffect, useRef, useReducer, useContext } from "react";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
@@ -32,7 +31,7 @@ import PassengerDetails from "../components/passengerDetails";
 import PersonIcon from "@mui/icons-material/Person";
 import PaymentCard from "../components/paymentCard";
 import TotalCard from "../components/totalCard";
-import { useNavigate, Outlet } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import ConfirmationPage from "./confirmationPage";
 import SortingPanel from "../components/sortingPanel";
 import { useIsAuthenticated } from "react-auth-kit";
@@ -48,7 +47,6 @@ import { useMediaQuery } from "@mui/material";
 import CapAirLogo from "../images/capAirLogo";
 import SearchContext from "../contexts/searchContext";
 import BaggagePolicyCard from "../components/baggagePolicyCard";
-import { Couple } from "../images/couple";
 import DaySkipper from "../components/daySkipper";
 
 export default function BookingPage(props) {
@@ -109,7 +107,7 @@ export default function BookingPage(props) {
     };
 
     let domain = process.env.REACT_APP_DOMAIN;
-    
+
     let url = `${process.env.REACT_APP_PROTOCOL}://${domain}/airport`;
     await fetch(url)
       .then((response) => response.json())
@@ -192,7 +190,7 @@ export default function BookingPage(props) {
     };
 
     let domain = process.env.REACT_APP_DOMAIN;
-    
+
     let url = `${process.env.REACT_APP_PROTOCOL}://${domain}/flight/book`;
     await fetch(url, {
       method: "POST",

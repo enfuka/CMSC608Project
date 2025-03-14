@@ -60,7 +60,7 @@ export default function SearchBar(props) {
 
   const getAirports = async () => {
     let domain = process.env.REACT_APP_DOMAIN;
-    
+
     let url = `${process.env.REACT_APP_PROTOCOL}://${domain}/airport`;
     await fetch(url)
       .then((response) => response.json())

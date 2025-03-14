@@ -8,7 +8,6 @@ export default function CapAirIcon(props) {
     <SvgIcon {...props}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        xmlns:svg="http://www.w3.org/2000/svg"
         width={383.88}
         height={307.1}
         data-name="Layer 2"

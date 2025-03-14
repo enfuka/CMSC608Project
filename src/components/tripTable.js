@@ -18,7 +18,6 @@ import {
   TableBody,
   useMediaQuery,
   useTheme,
-  Tooltip,
   Stack,
 } from "@mui/material";
 import { Container, Accordion } from "@mui/material";
@@ -29,7 +28,6 @@ import TripMap from "./tripMap";
 import DaySkipper from "./daySkipper";
 import executeScrollWithOffset from "../utilities/executeScrollWithOffset";
 import SectionDetails from "./sectionDetails";
-import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
 
 export default function TripTable(props) {
   const [expanded, setExpanded] = useState(false);

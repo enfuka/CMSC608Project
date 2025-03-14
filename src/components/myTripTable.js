@@ -10,16 +10,6 @@ import { TableBody } from "@mui/material";
 import { Container } from "@mui/material";
 import dayjs from "dayjs";
 import TripMap from "./tripMap";
-import {
-  CardHeader,
-  CardContent,
-  Stack,
-  Divider,
-  List,
-  ListItem,
-  ListItemText,
-} from "@mui/material";
-import PersonIcon from "@mui/icons-material/Person";
 import { useLocation } from "react-router-dom";
 
 export default function MyTripTable(props) {

@@ -5,15 +5,12 @@ import {
   ListItem,
   IconButton,
   ListItemButton,
-  ListItemText,
-  Divider,
   Tooltip,
 } from "@mui/material";
 import { useState, useEffect } from "react";
 import EditIcon from "@mui/icons-material/Edit";
 import { useIsAuthenticated } from "react-auth-kit";
 import { getCookie } from "../utilities/getCookie";
-import { Typography } from "antd";
 
 export default function SavedPassengers(props) {
   const [isLoading, setIsLoading] = useState(true);
@@ -30,7 +27,7 @@ export default function SavedPassengers(props) {
 
   const getSavedPassengerDetails = async () => {
     let domain = process.env.REACT_APP_DOMAIN;
-    
+
     let url = `${process.env.REACT_APP_PROTOCOL}://${domain}/user/passenger`;
     await fetch(url, {
       headers: {

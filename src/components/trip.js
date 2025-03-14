@@ -1,53 +1,19 @@
-import { useState, useEffect, useContext, useRef } from "react";
+import { useState, useEffect } from "react";
 import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
 import { styled } from "@mui/material/styles";
 import CardHeader from "@mui/material/CardHeader";
-import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
-import CardActions from "@mui/material/CardActions";
-import Collapse from "@mui/material/Collapse";
-import Avatar from "@mui/material/Avatar";
-import IconButton from "@mui/material/IconButton";
-import EditIcon from "@mui/icons-material/Edit";
 import Typography from "@mui/material/Typography";
-import TableHead from "@mui/material/TableHead";
-import TableRow from "@mui/material/TableRow";
-import Table from "@mui/material/Table";
-import TableCell, { tableCellClasses } from "@mui/material/TableCell";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import {
-  Box,
-  Button,
-  ButtonGroup,
-  CardActionArea,
-  Chip,
-  Grow,
-  Paper,
-  Slider,
-  Stack,
-  TableBody,
-  useMediaQuery,
-  useTheme,
-  Divider,
-  List,
-  ListItem,
-  ListItemText,
-  Tooltip,
-} from "@mui/material";
-import { Container, Backdrop } from "@mui/material";
+import { Box, Chip, Stack, Divider, List, ListItem } from "@mui/material";
 import ArrowForwardIosSharpIcon from "@mui/icons-material/ArrowForwardIosSharp";
 import MuiAccordion from "@mui/material/Accordion";
 import MuiAccordionSummary from "@mui/material/AccordionSummary";
 import MuiAccordionDetails from "@mui/material/AccordionDetails";
 import dayjs from "dayjs";
-import { useNavigate } from "react-router-dom";
-import Spinner from "../images/spinner";
 import TableSkeleton from "../components/tableSkeleton";
 import MyTripTable from "../components/myTripTable";
 import PersonIcon from "@mui/icons-material/Person";
-import { icons } from "../images/Icons";
-import ConnectingAirportsIcon from "@mui/icons-material/ConnectingAirports";
 import MultipleStopIcon from "@mui/icons-material/MultipleStop";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import NotesIcon from "@mui/icons-material/Notes";
